@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard - Student Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    
+    <div class="logo-container">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.qQQkshl4cY5SDDGWb7dROwAAAA?r=0&w=225&h=225&rs=1&pid=ImgDetMain&o=7&rm=3" alt="StudentHub Logo" class="logo">
+    <h1 id="portalTitle">Student Hub</h1>
+  </div>
+  </header>
+
+  <main>
+    <div class="welcome">
+      <h2>Welcome to StudentHub</h2>
+      <p>Select a section below to explore.</p>
+    </div>
+
+    
+     <div class="grid">
+      <div class="box"><a href="assignments.html">Assignments</a></div>
+      <div class="box"><a href="results.html">Results</a></div>
+      <div class="box"><a href="timetable.html">Timetable</a></div>
+      <div class="box"><a href="courses.html">Courses</a></div>
+      <div class="box"><a href="about_us.html">About Us</a></div>
+      <div class="box"><a href="faculty.html">Faculty Description</a></div>
+    </div>
+
+    <section id="content">
+      <h2>Your learning journey, simplified and accessible.</h2>
+     
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Email: <a href="mailto:studenthub123@gmail.com">studenthub123@gmail.com</a> | 
+      Mobile: <a href="tel:+919878564236">+91 9878564236</a>
+    </p>
+    <p>Address: 79, Raj Complex, near Iscon Temple, Ahmedabad, Gujarat, India</p>
+  </footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const role = params.get("role");
+    const title = document.getElementById("portalTitle");
+
+    if(role === "student") {
+      title.innerText = "Student Dashboard";
+    } else if(role === "faculty") {
+      title.innerText = "Faculty Dashboard";
+    } else if(role === "admin") {
+      title.innerText = "Administrator Dashboard";
+    }
+
+    function loadPage(page) {
+      const content = document.getElementById("content");
+      if(page === "assignments") {
+        content.innerHTML = "<h2>Assignments</h2><p>View or upload assignments here.</p>";
+      }
+      else if(page === "results") {
+        content.innerHTML = "<h2>Results</h2><p>Check your exam results here.</p>";
+      }
+      else if(page === "timetable") {
+        content.innerHTML = "<h2>Timetable</h2><p>View your class and exam schedule here.</p>";
+      }
+      else if(page === "courses") {
+        content.innerHTML = "<h2>Courses</h2><p>Browse available courses here.</p>";
+      }
+      else if(page === "about") {
+        content.innerHTML = "<h2>About Us</h2><p>StudentHub connects students, faculty, and administrators.</p>";
+      }
+      else if(page === "faculty") {
+        content.innerHTML = "<h2>Faculty Description</h2><p>Meet our faculty members and their expertise.</p>";
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
