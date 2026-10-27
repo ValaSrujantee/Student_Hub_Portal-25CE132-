@@ -45,7 +45,10 @@ function require_role(string ...$roles): void
     $role = $_SESSION['user']['role'] ?? '';
     if (!in_array($role, $roles, true)) {
         http_response_code(403);
-        echo '<!DOCTYPE html><html lang="en"><meta charset="UTF-8"><title>Access denied</title><h1>Access denied</h1><p>This page is not available for your account role.</p><p><a href="dashboard.php">Return to dashboard</a></p></html>';
+        $pageTitle = 'Access denied';
+        require __DIR__ . '/site_header.php';
+        echo '<main class="page-main"><h2>Access denied</h2><p>This page is not available for your account role.</p><p><a href="dashboard.php">Return to dashboard</a></p></main>';
+        require __DIR__ . '/site_footer.php';
         exit;
     }
 }

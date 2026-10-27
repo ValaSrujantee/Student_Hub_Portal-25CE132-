@@ -16,7 +16,7 @@ $signedInUser = $_SESSION['user'] ?? null;
 <body>
   <header>
     <div class="logo-container">
-      <img src="https://tse1.mm.bing.net/th/id/OIP.qQQkshl4cY5SDDGWb7dROwAAAA?r=0&w=225&h=225&rs=1&pid=ImgDetMain&o=7&rm=3" alt="StudentHub Logo" class="logo">
+      <img src="studenthub-logo.svg" alt="Student Hub logo" class="logo">
       <h1>Student Hub</h1>
     </div>
     <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">☰ Menu</button>

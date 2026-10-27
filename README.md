@@ -46,6 +46,7 @@ StudentHub/
 ├── docs/                Requirements, wireframe, and practical checks
 ├── screenshots/         Practical screenshots
 ├── uploads/events/      Validated event poster uploads
+├── studenthub-logo.svg  Local Student Hub logo used on every page
 ├── *.html               Static Student Hub pages
 ├── *.php                Registration, login, dashboard, and CRUD pages
 ├── *.js                 Frontend interactions and Fetch API client
