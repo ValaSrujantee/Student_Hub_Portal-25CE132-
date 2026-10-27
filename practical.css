@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 html {
   color-scheme: light;
 }
@@ -59,6 +65,7 @@ header {
 
 main {
   width: min(100%, 1200px);
+  flex: 1 0 auto;
   margin: 0 auto;
   padding: 24px 14px 32px;
 }
@@ -67,6 +74,8 @@ footer {
   box-sizing: border-box;
   width: 100%;
   position: static;
+  flex: 0 0 auto;
+  margin-top: auto;
 }
 
 .logo-container {
@@ -461,7 +470,7 @@ body.dark-theme .error-message {
   }
 }
 
-@media (min-width: 761px) {
+@media (min-width: 1024px) {
   header {
     position: fixed;
     top: 0;
