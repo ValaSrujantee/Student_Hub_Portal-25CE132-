@@ -25,7 +25,7 @@
     });
 
     navigation.addEventListener("click", (event) => {
-      if (event.target.closest("a") && window.matchMedia("(max-width: 760px)").matches) {
+      if (event.target.closest("a") && window.matchMedia("(max-width: 1239px)").matches) {
         menuToggle.setAttribute("aria-expanded", "false");
         navigation.classList.remove("is-open");
       }
