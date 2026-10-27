@@ -1,0 +1,17 @@
+[
+  { "id": 1, "name": "Aarav Patel", "course": "Computer Science", "year": 1, "profile": "Interested in web interfaces and programming fundamentals." },
+  { "id": 2, "name": "Diya Shah", "course": "Mathematics", "year": 2, "profile": "Enjoys statistics, problem solving, and peer study groups." },
+  { "id": 3, "name": "Ishaan Mehta", "course": "Physics", "year": 3, "profile": "Focuses on laboratory work and applied physics projects." },
+  { "id": 4, "name": "Anaya Desai", "course": "Chemistry", "year": 1, "profile": "Explores practical chemistry and safe laboratory methods." },
+  { "id": 5, "name": "Vivaan Rao", "course": "English", "year": 2, "profile": "Writes short fiction and participates in reading circles." },
+  { "id": 6, "name": "Meera Iyer", "course": "Biology", "year": 3, "profile": "Interested in ecology and biological research." },
+  { "id": 7, "name": "Arjun Joshi", "course": "History", "year": 4, "profile": "Studies modern history and archival sources." },
+  { "id": 8, "name": "Sana Khan", "course": "Economics", "year": 2, "profile": "Interested in economic policy and data analysis." },
+  { "id": 9, "name": "Reyansh Shah", "course": "Computer Science", "year": 3, "profile": "Builds small applications and studies software design." },
+  { "id": 10, "name": "Ira Patel", "course": "Mathematics", "year": 1, "profile": "Enjoys algebra and collaborative problem solving." },
+  { "id": 11, "name": "Kabir Mehta", "course": "Physics", "year": 4, "profile": "Works on electronics and experimental measurements." },
+  { "id": 12, "name": "Tara Desai", "course": "Chemistry", "year": 2, "profile": "Interested in materials and laboratory analysis." },
+  { "id": 13, "name": "Neil Rao", "course": "English", "year": 3, "profile": "Studies literature and academic communication." },
+  { "id": 14, "name": "Aditi Iyer", "course": "Biology", "year": 4, "profile": "Interested in biodiversity and conservation." },
+  { "id": 15, "name": "Rohan Joshi", "course": "Economics", "year": 1, "profile": "Explores markets, finance, and introductory economics." }
+]

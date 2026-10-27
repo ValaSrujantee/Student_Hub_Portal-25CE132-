@@ -1,0 +1,6 @@
+<FilesMatch "\.(sql)$">
+  Require all denied
+</FilesMatch>
+<Files "seed.php">
+  Require all denied
+</Files>

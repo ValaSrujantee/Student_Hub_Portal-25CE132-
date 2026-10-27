@@ -1,0 +1,17 @@
+[
+  { "id": 1, "category": "Portal", "question": "How do I open the student dashboard?", "answer": "Use the Dashboard link in the navigation or log in from the Home page." },
+  { "id": 2, "category": "Registration", "question": "Which details are required for registration?", "answer": "Complete the name, email, mobile, password, course, year, gender, and terms fields." },
+  { "id": 3, "category": "Courses", "question": "Where can I see the available courses?", "answer": "Open the Courses section from the existing Student Hub dashboard." },
+  { "id": 4, "category": "Assignments", "question": "Where are assignments listed?", "answer": "Choose Assignments from the Student Hub dashboard." },
+  { "id": 5, "category": "Results", "question": "Where can I view exam results?", "answer": "Choose Results from the Student Hub dashboard." },
+  { "id": 6, "category": "Timetable", "question": "How do I find the weekly timetable?", "answer": "Open Timetable from the Student Hub dashboard." },
+  { "id": 7, "category": "Faculty", "question": "Where can I find faculty details?", "answer": "Open Faculty Description from the Student Hub dashboard." },
+  { "id": 8, "category": "Events", "question": "Where are campus events displayed?", "answer": "Open Events and Data to browse event records and featured events." },
+  { "id": 9, "category": "Events", "question": "Can I search the event list?", "answer": "Yes. Enter a title, date, category, or description in the Search field." },
+  { "id": 10, "category": "Events", "question": "Can event records be filtered?", "answer": "Use the Filter menu to show records from one event category." },
+  { "id": 11, "category": "Students", "question": "How do I browse student profiles?", "answer": "Select Students in the data menu on the Events and Data page." },
+  { "id": 12, "category": "Students", "question": "Can I filter student profiles by course?", "answer": "Yes. Select a course in the Filter menu after choosing Students." },
+  { "id": 13, "category": "Accessibility", "question": "Can I use the site with a keyboard?", "answer": "Links, form controls, menus, and interactive buttons can be reached using the keyboard." },
+  { "id": 14, "category": "Display", "question": "How do I change the page theme?", "answer": "Use the theme button in the navigation to switch between light and dark themes." },
+  { "id": 15, "category": "Display", "question": "Does the theme choice remain after I leave the page?", "answer": "The theme choice is saved in this browser and restored when a Student Hub page opens." }
+]

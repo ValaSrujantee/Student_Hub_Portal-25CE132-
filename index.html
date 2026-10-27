@@ -1,67 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Student Hub Portal</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Hub - Home</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="practical.css">
+  <script src="site-ui.js" defer></script>
 </head>
 <body>
-  
   <header>
-    
+    <div class="logo-container">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.qQQkshl4cY5SDDGWb7dROwAAAA?r=0&w=225&h=225&rs=1&pid=ImgDetMain&o=7&rm=3" alt="StudentHub Logo" class="logo">
+      <h1>Student Hub</h1>
+    </div>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">☰ Menu</button>
+    <nav class="site-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="portal.html">Dashboard</a>
+      <a href="about_us.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="registration.html">Registration</a>
+      <a href="login.php">Login</a>
+      <a href="contact.php">Contact</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Switch to dark theme</button>
+    </nav>
+  </header>
 
-  <div class="logo-container">
-    <img src="https://tse1.mm.bing.net/th/id/OIP.qQQkshl4cY5SDDGWb7dROwAAAA?r=0&w=225&h=225&rs=1&pid=ImgDetMain&o=7&rm=3" alt="StudentHub Logo" class="logo">
-    <h1 id="portalTitle">Student Hub</h1>
-  </div>
-
-
-</header>
-
-
-  <main>
-    <h2>Welcome</h2>
-    <p>Please log in to continue.</p>
-    <form onsubmit="return checkLogin()">
-      <input type="text" id="role" placeholder="Enter role (student/faculty/admin)" required>
-    </br>
-    </br>
-      <input type="password" id="password" placeholder="Enter password" required>
-  </br>
-  </br>
-      <button type="submit">Login</button>
-    </form>
+  <main class="page-main">
+    <h2>Welcome to Student Hub</h2>
+    <p>Find course information, assignments, results, timetables, events, and student services in one place.</p>
+    <div class="grid">
+      <div class="box"><a href="login.php">Student and Faculty Login</a></div>
+      <div class="box"><a href="registration.html">Student Registration</a></div>
+      <div class="box"><a href="events.html">Events and Data</a></div>
+      <div class="box"><a href="about_us.html">About Student Hub</a></div>
+    </div>
   </main>
 
   <footer>
-    <p>
-      Email: <a href="mailto:studenthub123@gmail.com">studenthub123@gmail.com</a> |
-      Mobile: <a href="tel:+919878564236">+91 9878564236</a>
-    </p>
-    <p>Address: 79, Raj Complex, near Iscon Temple, Ahmedabad, Gujarat, India</p>
+    <p>Email: <a href="mailto:studenthub123@gmail.com">studenthub123@gmail.com</a> | Mobile: <a href="tel:+919878564236">+91 9878564236</a></p>
+    <p>79, Raj Complex, near Iscon Temple, Ahmedabad, Gujarat, India</p>
   </footer>
-
-  <script>
-    function checkLogin() {
-      let role = document.getElementById("role").value.toLowerCase().trim();
-      let pass = document.getElementById("password").value.trim();
-
-      if(role === "student" && pass === "123@123") {
-        window.location.href = "portal.html?role=student";
-        return false;
-      }
-      else if(role === "faculty" && pass === "1234@1234") {
-        window.location.href = "portal.html?role=faculty";
-        return false;
-      }
-      else if(role === "admin" && pass === "12345@12345") {
-        window.location.href = "portal.html?role=admin";
-        return false;
-      }
-      else {
-        alert("Invalid credentials!");
-        return false;
-      }
-    }
-  </script>
 </body>
 </html>

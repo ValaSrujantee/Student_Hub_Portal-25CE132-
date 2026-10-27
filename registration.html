@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration - Student Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="practical.css">
+  <script src="site-ui.js" defer></script>
+  <script src="registration.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.qQQkshl4cY5SDDGWb7dROwAAAA?r=0&w=225&h=225&rs=1&pid=ImgDetMain&o=7&rm=3" alt="StudentHub Logo" class="logo">
+      <h1>Student Hub</h1>
+    </div>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">☰ Menu</button>
+    <nav class="site-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="portal.html">Dashboard</a>
+      <a href="about_us.html">About</a>
+      <a href="registration.html" aria-current="page">Registration</a>
+      <a href="events.html">Events</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Switch to dark theme</button>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h2>Student Registration</h2>
+    <p>Enter your details to complete the registration form.</p>
+    <section class="registration-panel" aria-labelledby="registration-heading">
+      <h3 id="registration-heading">Registration details</h3>
+      <form class="registration-form" id="registration-form" novalidate>
+        <div class="form-grid">
+          <label class="form-field" for="student-name">
+            Name
+            <input id="student-name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+            <span class="field-error" id="name-error"></span>
+          </label>
+          <label class="form-field" for="student-email">
+            Email
+            <input id="student-email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+            <span class="field-error" id="email-error"></span>
+          </label>
+          <label class="form-field" for="student-mobile">
+            Mobile number
+            <input id="student-mobile" name="mobile" type="tel" autocomplete="tel" inputmode="tel" required aria-describedby="mobile-error">
+            <span class="field-error" id="mobile-error"></span>
+          </label>
+          <label class="form-field" for="student-course">
+            Course
+            <select id="student-course" name="course" required aria-describedby="course-error">
+              <option value="">Select a course</option>
+              <option>Mathematics</option>
+              <option>Physics</option>
+              <option>Chemistry</option>
+              <option>Computer Science</option>
+              <option>English</option>
+              <option>Biology</option>
+              <option>History</option>
+              <option>Economics</option>
+            </select>
+            <span class="field-error" id="course-error"></span>
+          </label>
+          <label class="form-field" for="student-year">
+            Year
+            <select id="student-year" name="year" required aria-describedby="year-error">
+              <option value="">Select a year</option>
+              <option value="1">Year 1</option>
+              <option value="2">Year 2</option>
+              <option value="3">Year 3</option>
+              <option value="4">Year 4</option>
+            </select>
+            <span class="field-error" id="year-error"></span>
+          </label>
+          <label class="form-field" for="student-password">
+            Password
+            <input id="student-password" name="password" type="password" autocomplete="new-password" required aria-describedby="password-help password-error">
+            <span id="password-help">Use at least 8 characters with uppercase, lowercase, number, and symbol.</span>
+            <meter class="password-meter" id="password-strength" min="0" max="4" value="0" aria-label="Password strength"></meter>
+            <span id="password-strength-text" aria-live="polite">Password strength: not entered</span>
+            <span class="field-error" id="password-error"></span>
+          </label>
+          <label class="form-field" for="confirm-password">
+            Confirm password
+            <input id="confirm-password" name="confirmPassword" type="password" autocomplete="new-password" required aria-describedby="confirm-password-error">
+            <span class="field-error" id="confirm-password-error"></span>
+          </label>
+        </div>
+
+        <fieldset class="form-fieldset" aria-describedby="gender-error">
+          <legend>Gender</legend>
+          <div class="radio-options">
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+          </div>
+          <span class="field-error" id="gender-error"></span>
+        </fieldset>
+
+        <label class="terms-field" for="terms">
+          <input id="terms" name="terms" type="checkbox" required aria-describedby="terms-error">
+          I accept the terms and conditions.
+        </label>
+        <span class="field-error" id="terms-error"></span>
+        <button type="submit">Submit registration</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+      <p>For database-backed account creation, use <a href="secure_register.php">Create a student account</a>.</p>
+    </section>
+  </main>
+
+  <footer><p>Student Hub</p></footer>
+</body>
+</html>

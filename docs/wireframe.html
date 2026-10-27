@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Hub Low-Fidelity Wireframe</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 24px; color: #222; background: #f2f2f2; font: 16px Arial, sans-serif; }
+    h1 { margin: 0 0 20px; text-align: center; }
+    .page-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; max-width: 1100px; margin: auto; }
+    .page { padding: 16px; border: 2px solid #444; background: #fff; }
+    .header, .footer, .block, .tile, .field { border: 1px solid #666; padding: 10px; margin: 8px 0; background: #eee; }
+    .header { font-weight: bold; }
+    .tiles { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .tile { text-align: center; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .field { min-height: 34px; }
+    @media (max-width: 650px) { .page-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <h1>Student Hub - Low-Fidelity Wireframe</h1>
+  <main class="page-grid">
+    <section class="page" aria-labelledby="home-wireframe">
+      <h2 id="home-wireframe">Home</h2>
+      <div class="header">Logo | Home | About | Events | Login</div>
+      <div class="block">Welcome and short portal description</div>
+      <div class="tiles"><div class="tile">Login</div><div class="tile">Registration</div><div class="tile">Events</div><div class="tile">About</div></div>
+      <div class="footer">Contact details</div>
+    </section>
+    <section class="page" aria-labelledby="register-wireframe">
+      <h2 id="register-wireframe">Registration</h2>
+      <div class="header">Logo | Student Hub navigation</div>
+      <div class="row"><div class="field">Name</div><div class="field">Email</div></div>
+      <div class="row"><div class="field">Mobile</div><div class="field">Course</div></div>
+      <div class="row"><div class="field">Year</div><div class="field">Password</div></div>
+      <div class="block">Confirm password | Gender | Terms</div>
+      <div class="tile">Submit registration</div>
+    </section>
+    <section class="page" aria-labelledby="dashboard-wireframe">
+      <h2 id="dashboard-wireframe">Dashboard</h2>
+      <div class="header">Logo | Dashboard | Logout</div>
+      <div class="block">Welcome, signed-in user</div>
+      <div class="tiles"><div class="tile">Assignments</div><div class="tile">Results</div><div class="tile">Timetable</div><div class="tile">Courses</div><div class="tile">Events</div><div class="tile">About</div></div>
+      <div class="footer">Student Hub</div>
+    </section>
+    <section class="page" aria-labelledby="events-wireframe">
+      <h2 id="events-wireframe">Events and Data</h2>
+      <div class="header">Featured event | Previous | Next</div>
+      <div class="row"><div class="field">Data type</div><div class="field">Search</div></div>
+      <div class="row"><div class="field">Filter</div><div class="field">Sort</div></div>
+      <div class="block">Event / student / FAQ records</div>
+      <div class="footer">Previous page | Page number | Next page</div>
+    </section>
+  </main>
+</body>
+</html>

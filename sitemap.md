@@ -1,15 +1,23 @@
-StudentHub
-├── Login
-├── Student Dashboard
-│   ├── Assignments
-│   ├── Results
-│   ├── Timetable
-│   └── Courses
-├── Faculty Dashboard
-│   ├── Courses
-│   └── Timetable
-├── Admin Dashboard
-│   ├── User Management
-│   └── Reports
-├── About Us
-└── Contact Us
+# Student Hub sitemap
+
+- Home (index.html)
+  - About (about_us.html)
+  - Courses (courses.html)
+  - Assignments (assignments.html)
+  - Results (results.html)
+  - Timetable (timetable.html)
+  - Faculty directory (faculty.html)
+  - Events and JSON data (events.html)
+  - Frontend registration (registration.html)
+    - Secure account registration (secure_register.php)
+  - Contact form (contact.php)
+  - Login (login.php)
+    - Role-based dashboard (dashboard.php)
+      - Student dashboard (student_dashboard.php)
+      - Faculty dashboard (faculty_dashboard.php)
+      - Admin dashboard (admin_dashboard.php)
+        - Student CRUD (student_management.php)
+        - Event CRUD and poster upload (event_management.php)
+        - Fetch API CRUD (api_crud.php to api/events.php)
+    - Logout (logout.php)
+- Database connection check (db_test.php)

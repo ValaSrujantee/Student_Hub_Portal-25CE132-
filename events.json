@@ -1,0 +1,17 @@
+[
+  { "id": 1, "title": "Student Orientation", "date": "2026-08-03", "category": "Campus", "description": "Meet the student support team and learn about campus facilities." },
+  { "id": 2, "title": "Web Development Workshop", "date": "2026-08-12", "category": "Workshop", "description": "Practice building accessible pages with HTML and CSS." },
+  { "id": 3, "title": "Library Research Session", "date": "2026-08-19", "category": "Academic", "description": "Learn how to find and cite reliable academic sources." },
+  { "id": 4, "title": "Inter-College Quiz", "date": "2026-08-26", "category": "Competition", "description": "Take part in a team quiz covering science and general knowledge." },
+  { "id": 5, "title": "Career Guidance Talk", "date": "2026-09-02", "category": "Career", "description": "Hear practical advice about internships and early career planning." },
+  { "id": 6, "title": "Tree Plantation Drive", "date": "2026-09-09", "category": "Community", "description": "Join a campus tree planting and clean-up activity." },
+  { "id": 7, "title": "Mathematics Problem-Solving Hour", "date": "2026-09-16", "category": "Academic", "description": "Work through selected problems with peer mentors." },
+  { "id": 8, "title": "Student Photography Exhibit", "date": "2026-09-23", "category": "Arts", "description": "View photographs created by students across the campus." },
+  { "id": 9, "title": "Robotics Demonstration", "date": "2026-10-01", "category": "Technology", "description": "Explore student-built robots and basic control systems." },
+  { "id": 10, "title": "Annual Sports Meet", "date": "2026-10-08", "category": "Sports", "description": "Compete in track, field, and team sporting events." },
+  { "id": 11, "title": "Literary Reading Circle", "date": "2026-10-15", "category": "Arts", "description": "Share short readings and discuss selected works." },
+  { "id": 12, "title": "Cyber Safety Seminar", "date": "2026-10-22", "category": "Technology", "description": "Review safe account and device practices for students." },
+  { "id": 13, "title": "Science Poster Showcase", "date": "2026-11-04", "category": "Academic", "description": "Present student science projects as research posters." },
+  { "id": 14, "title": "Community Service Day", "date": "2026-11-12", "category": "Community", "description": "Volunteer with local community support activities." },
+  { "id": 15, "title": "Semester Project Exhibition", "date": "2026-11-20", "category": "Technology", "description": "Demonstrate semester projects to students and faculty." }
+]

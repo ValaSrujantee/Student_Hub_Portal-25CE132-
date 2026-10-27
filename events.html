@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events and Data - Student Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="practical.css">
+  <script src="site-ui.js" defer></script>
+  <script src="events.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.qQQkshl4cY5SDDGWb7dROwAAAA?r=0&w=225&h=225&rs=1&pid=ImgDetMain&o=7&rm=3" alt="StudentHub Logo" class="logo">
+      <h1>Student Hub</h1>
+    </div>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">☰ Menu</button>
+    <nav class="site-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="portal.html">Dashboard</a>
+      <a href="about_us.html">About</a>
+      <a href="registration.html">Registration</a>
+      <a href="events.html" aria-current="page">Events</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Switch to dark theme</button>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h2>Events and Student Hub Data</h2>
+    <p>Browse events, student profiles, and frequently asked questions.</p>
+
+    <aside class="notice-banner" id="notice-banner" role="status">
+      <p>Student Hub event and campus information is available below.</p>
+      <button id="dismiss-notice" type="button" aria-label="Dismiss notification">Dismiss</button>
+    </aside>
+
+    <section class="content-slider" aria-labelledby="featured-heading">
+      <h3 id="featured-heading">Featured events</h3>
+      <div class="slider-content" id="slider-content" aria-live="polite">
+        <p id="slider-message">Loading events…</p>
+      </div>
+      <div class="slider-controls">
+        <button id="previous-event" type="button" aria-label="Previous event">Previous</button>
+        <button id="next-event" type="button" aria-label="Next event">Next</button>
+      </div>
+    </section>
+
+    <section class="data-browser" aria-labelledby="browser-heading">
+      <h3 id="browser-heading">Browse records</h3>
+      <div class="data-controls">
+        <label for="data-type">Data
+          <select id="data-type">
+            <option value="events">Events</option>
+            <option value="students">Students</option>
+            <option value="faqs">FAQs</option>
+          </select>
+        </label>
+        <label for="search-records">Search
+          <input id="search-records" type="search" autocomplete="off">
+        </label>
+        <label for="filter-records">Filter
+          <select id="filter-records">
+            <option value="">All</option>
+          </select>
+        </label>
+        <label for="sort-records">Sort order
+          <select id="sort-records">
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+          </select>
+        </label>
+      </div>
+      <p class="pagination-status" id="data-status" role="status" aria-live="polite">Loading events…</p>
+      <div class="record-grid" id="records" aria-live="polite"></div>
+      <div class="pagination-controls">
+        <button id="previous-page" type="button" disabled>Previous page</button>
+        <span id="page-status" aria-live="polite">Page 1</span>
+        <button id="next-page" type="button" disabled>Next page</button>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="event-modal" aria-labelledby="modal-title">
+    <h2 id="modal-title">Event details</h2>
+    <p id="modal-description"></p>
+    <button id="close-modal" type="button">Close</button>
+  </dialog>
+
+  <footer><p>Student Hub</p></footer>
+</body>
+</html>

@@ -1,22 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard - Student Hub</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="practical.css">
 </head>
 <body>
   <header>
     
     <div class="logo-container">
     <img src="https://tse1.mm.bing.net/th/id/OIP.qQQkshl4cY5SDDGWb7dROwAAAA?r=0&w=225&h=225&rs=1&pid=ImgDetMain&o=7&rm=3" alt="StudentHub Logo" class="logo">
-    <h1 id="portalTitle">Student Hub</h1>
+    <h1>Student Hub</h1>
   </div>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">☰ Menu</button>
+    <nav class="site-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="portal.html">Dashboard</a>
+      <a href="about_us.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="events.html">Events</a>
+      <a href="registration.html">Registration</a>
+      <a href="login.php">Login</a>
+      <a href="contact.php">Contact</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Switch to dark theme</button>
+    </nav>
   </header>
 
   <main>
     <div class="welcome">
       <h2>Welcome to StudentHub</h2>
       <p>Select a section below to explore.</p>
+      <p><a href="dashboard.php">Open your secured dashboard</a></p>
     </div>
 
     
@@ -27,6 +43,8 @@
       <div class="box"><a href="courses.html">Courses</a></div>
       <div class="box"><a href="about_us.html">About Us</a></div>
       <div class="box"><a href="faculty.html">Faculty Description</a></div>
+      <div class="box"><a href="registration.html">Registration</a></div>
+      <div class="box"><a href="events.html">Events and Data</a></div>
     </div>
 
     <section id="content">
@@ -43,43 +61,6 @@
     <p>Address: 79, Raj Complex, near Iscon Temple, Ahmedabad, Gujarat, India</p>
   </footer>
 
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const role = params.get("role");
-    const title = document.getElementById("portalTitle");
-
-    if(role === "student") {
-      title.innerText = "Student Dashboard";
-    } else if(role === "faculty") {
-      title.innerText = "Faculty Dashboard";
-    } else if(role === "admin") {
-      title.innerText = "Administrator Dashboard";
-    }
-
-    function loadPage(page) {
-      const content = document.getElementById("content");
-      if(page === "assignments") {
-        content.innerHTML = "<h2>Assignments</h2><p>View or upload assignments here.</p>";
-      }
-      else if(page === "results") {
-        content.innerHTML = "<h2>Results</h2><p>Check your exam results here.</p>";
-      }
-      else if(page === "timetable") {
-        content.innerHTML = "<h2>Timetable</h2><p>View your class and exam schedule here.</p>";
-      }
-      else if(page === "courses") {
-        content.innerHTML = "<h2>Courses</h2><p>Browse available courses here.</p>";
-      }
-      else if(page === "about") {
-        content.innerHTML = "<h2>About Us</h2><p>StudentHub connects students, faculty, and administrators.</p>";
-      }
-      else if(page === "faculty") {
-        content.innerHTML = "<h2>Faculty Description</h2><p>Meet our faculty members and their expertise.</p>";
-      }
-    }
-  </script>
+  <script src="site-ui.js" defer></script>
 </body>
 </html>
-
-
-
